@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+
+<body class="box-border py-2 px-5 ">
+    
+    <header class="w-full h-10 bg-lime-300 flex justify-center items-center md:grid md:grid-cols-12">
+        <!-- logo div -->
+        <div class="md:col-span-4">
+            <a href="./index.html"><img class="h-10" src="./img/logo.png" alt="logo"></a>
+        </div>
+        <!-- navbar   -->
+        <nav class="fixed bottom-0 left-0 bg-purple-500 h-16 w-full  md:h-10 md:relative md:col-span-8 md:h-10 md:bg-transparent">
+            <ul class="h-16 w-full grid grid-cols-4 md:h-10 md:flex md:gap-8 md:justify-center md:items-center">
+                <li class="text-center text-[18px] ">
+                    <a href="./html/promotion.html">
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-fire "></i> <br>
+                        </div>
+                        Promotion</a>
+                </li>
+                <li class="text-center text-[18px] md:relative md:overflow-hidden bottomAfter">
+                    <a href="./index.html">
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-house scale-150 text-[#A5DD9B] duration-200  md:hidden"></i> <br>
+                        </div>
+                        Home</a>
+                </li>
+                <li class="text-center text-[18px]">
+                    <a href="./html/funds.html">
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-wallet md:hidden"></i> <br>
+                        </div>
+                        Diposit</a>
+                </li>
+                <li class="text-center text-[18px]">
+                    <a href="./html/account.html">
+                        <div class="md:hidden">
+
+                            <i class="fa-solid fa-user md:hidden"></i> <br>
+                        </div>
+                        Account</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- help icon div  -->
+    </header>
+    <main class="box-border mt-5">
+
+        <!-- slider parent  -->
+<div id="sliderParentDiv" class="h-[200px] w-full overflow-hidden bg-lime-500 md:h-[250px] md:w-1/2 mx-auto">
+<div class="relative">
+    <!-- slider count -->
+    <div class="w-full h-5 bg-orange-400 text-center md:h-[30px]"><span id="slider_Count"></span>/<span id="total_slide"></span></div>
+
+    <!-- slider move btn  -->
+
+    <button id="slide-left-btn" class="absolute top-[50%] left-0 translate-y-[-50%] h-12 w-8 grid place-items-center bg-lime-500 text-[35px] z-10 md:h-14"><i class="fa-solid fa-chevron-left"></i></button>
+    <button id="slide-right-btn" class="absolute top-[50%] right-0 translate-y-[-50%] h-12 w-8 grid place-items-center bg-lime-500 text-[35px] z-10 md:h-14"><i class="fa-solid fa-chevron-right"></i></button>
+    
+    <!-- slide div  -->
+     <div id="slide" class="h-[180px]  bg-purple-600 flex duration-500 md:h-[220px]">
+       
+        <!-- 1st promotion div  -->
+        <div class="SliderChaild h-full  grid place-items-center">
+            <img src="img/promotion-1.png" alt="promotional Image">
+        </div>
+               
+        <!-- 2nd promotion div  -->
+        <div class="SliderChaild h-full  grid place-items-center">
+            <img src="img/promotion-2.png" alt="promotional Image">
+        </div>
+       
+        <!-- 3rd promotion div  -->
+        <div class="SliderChaild h-full  grid place-items-center">
+            <img src="img/promotion-3.png" alt="promotional Image">
+        </div>
+
+        <!-- 4th promotion div  -->
+        <div class="SliderChaild h-full  grid place-items-center">
+            <img src="img/promotion-4.png" alt="promotional Image">
+        </div>
+
+        <!-- 5th promotion div  -->
+        <div class="SliderChaild h-full  grid place-items-center">
+            <img src="img/promotion-5.png" alt="promotional Image">
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+
+<!-- game catagoris section  -->
+
+<div class="h-[60px] w-full bg-lime-600 box-border mt-5 grid place-items-center">
+
+    <div class="w-full h-[60px] grid grid-cols-2 items-center">
+        <button onclick="Catgori_Change('slotId')" id="slotId" class="relative overflow-hidden h-12 w-full bg-slate-500 duration-300 "><span>Slot</span>Slot</button>
+        <button onclick="Catgori_Change('CasinoId')" id="CasinoId" class="relative  overflow-hidden duration-300 h-12 w-full bg-slate-500"><span>Casino</span></button>
+    </div>
+</div>
+<!-- gatagoris parent  -->
+<div id="catagorisContentParent" class="h-[80px] w-full bg-yellow-300 grid grid-cols-2">
+
+    
+
+</div>
+    </main>
+
+
+    
+
+        <button id="Customer_chat_btn" class="absolute top-[70vh] md:top-[80%] right-[5%] h-12 w-12 bg-yellow-600 rounded-full text-[25px]">
+            <i class="fa-solid fa-headset"></i>
+        </button>
+  
+
+
+    <script src="./js/home.js"></script>
+</body>
+</html>
